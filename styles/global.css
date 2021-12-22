@@ -3,8 +3,13 @@
 * {
   box-sizing: border-box;
   font-family: "Ubuntu Mono", monospace;
+  transition: all 0.2s ease-in-out;
 }
 
 body {
   margin: 0 auto;
+}
+
+img {
+  border-radius: 6px;
 }
