@@ -8,12 +8,12 @@ import { Button, Modal, Spacer, Divider } from "@geist-ui/react";
 
 import Header from "../components/Header";
 import Organizer from "../components/Organizer";
+import RegisterForm from "../components/Register";
 
 import Image from "next/image";
 
 const HomePage = () => {
-  const [registratioModal, setRegistrationModal] = React.useState(false);
-
+  const [registrationModal, setRegistrationModal] = React.useState(false);
   return (
     <>
       <Header />
@@ -41,7 +41,10 @@ const HomePage = () => {
           >
             KubeHacks Init 2021
           </h2>
-          <Button type="success-light">Register</Button>
+          { registrationModal ?
+          <Button loading onClick={_ => setRegistrationModal(!registrationModal)} type="success-light">Register</Button>
+        :
+        <Button onClick={_ => setRegistrationModal(!registrationModal)} type="success-light">Register</Button> }
         </div>
       </main>
       <div>
@@ -124,6 +127,15 @@ const HomePage = () => {
         </div>
       </footer>
       <Spacer />
+
+      <Modal visible={registrationModal} onClose={() => setRegistrationModal(!registrationModal)}>
+            <Modal.Title>
+                Register
+            </Modal.Title>
+            <Modal.Content>
+                <RegisterForm />
+            </Modal.Content>
+      </Modal>
     </>
   );
 };

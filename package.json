@@ -22,9 +22,11 @@
   "dependencies": {
     "@geist-ui/react": "^2.2.0",
     "@geist-ui/react-icons": "^1.0.1",
+    "deta": "^1.0.1",
     "next": "^12.0.7",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-hot-toast": "^2.1.1"
   },
   "devDependencies": {
     "prettier": "2.5.1"
