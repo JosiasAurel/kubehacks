@@ -7,10 +7,10 @@ import { Toaster } from "react-hot-toast";
 const KubeHacksApp = ({ Component, pageProps }) => {
   return (
     <>
-    <Component {...pageProps} />
-    <Toaster />
+      <Component {...pageProps} />
+      <Toaster />
     </>
-  )
+  );
 };
 
 export default KubeHacksApp;

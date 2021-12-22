@@ -41,10 +41,22 @@ const HomePage = () => {
           >
             KubeHacks Init 2021
           </h2>
-          { registrationModal ?
-          <Button loading onClick={_ => setRegistrationModal(!registrationModal)} type="success-light">Register</Button>
-        :
-        <Button onClick={_ => setRegistrationModal(!registrationModal)} type="success-light">Register</Button> }
+          {registrationModal ? (
+            <Button
+              loading
+              onClick={(_) => setRegistrationModal(!registrationModal)}
+              type="success-light"
+            >
+              Register
+            </Button>
+          ) : (
+            <Button
+              onClick={(_) => setRegistrationModal(!registrationModal)}
+              type="success-light"
+            >
+              Register
+            </Button>
+          )}
         </div>
       </main>
       <div>
@@ -128,13 +140,14 @@ const HomePage = () => {
       </footer>
       <Spacer />
 
-      <Modal visible={registrationModal} onClose={() => setRegistrationModal(!registrationModal)}>
-            <Modal.Title>
-                Register
-            </Modal.Title>
-            <Modal.Content>
-                <RegisterForm />
-            </Modal.Content>
+      <Modal
+        visible={registrationModal}
+        onClose={() => setRegistrationModal(!registrationModal)}
+      >
+        <Modal.Title>Register</Modal.Title>
+        <Modal.Content>
+          <RegisterForm />
+        </Modal.Content>
       </Modal>
     </>
   );
