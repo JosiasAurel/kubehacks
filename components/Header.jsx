@@ -34,10 +34,12 @@ const Header = () => {
           </Tag>
         </div>
         <nav>
-          <a>Home</a>
+          <Link href="/">
+            <a>Home</a>
+          </Link>
           <a>Register</a>
           <a>Sign In</a>
-          <a>Organizers</a>
+          <a href="#organizers">Organizers</a>
         </nav>
         {windowWidth <= 500 ? (
           <div onClick={(_) => setMenu(!menu)}>
@@ -59,10 +61,12 @@ const Header = () => {
               alignItems: "center",
             }}
           >
-            <a>Home</a>
+            <Link href="/">
+              <a>Home</a>
+            </Link>
             <a>Register</a>
             <a>Sign In</a>
-            <a>Organizers</a>
+            <a href="#organizers">Organizers</a>
           </nav>
         </Modal.Content>
       </Modal>

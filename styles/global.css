@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Ubuntu Mono", monospace;
   transition: all 0.2s ease-in-out;
+  scroll-behavior: smooth;
 }
 
 body {

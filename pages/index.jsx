@@ -60,8 +60,8 @@ const HomePage = () => {
           </p>
 
           <p>
-              All participants who succeed in completing at least 3 tasks will receive
-              a certificate of completion in reward of their hard work.
+            All participants who succeed in completing at least 3 tasks will
+            receive a certificate of completion in reward of their hard work.
           </p>
         </div>
         <div id="organizers">
@@ -82,47 +82,48 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div style={{ textAlign: "center",
-         }}>
-            <h2>Sponsors</h2>
-            <p>No Sponsors yet</p>
-            <a target="_blank" href="https://forms.gle/cW4asHFpJypCDH9D7">
-                <Button type="success">
-                Become a Sponsor
-            </Button>
-                </a>  
+        <div style={{ textAlign: "center" }}>
+          <h2>Sponsors</h2>
+          <p>No Sponsors yet</p>
+          <a target="_blank" href="https://forms.gle/cW4asHFpJypCDH9D7">
+            <Button type="success">Become a Sponsor</Button>
+          </a>
         </div>
         <Spacer />
       </div>
 
-<Spacer />
-<Divider />
-<footer style={{
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-evenly",
-}}>
-    <img src="/logo.png" alt="KubeHacksLogo" width="40%" />
-    <div style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-evenly"
-    }}>
-        <a href="mailto:josias@josiasw.dev">
-            josias@josiasw.dev
-        </a>
-        <span style={{
+      <Spacer />
+      <Divider />
+      <footer
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-evenly",
+        }}
+      >
+        <img src="/logo.png" alt="KubeHacksLogo" width="40%" />
+        <div
+          style={{
             display: "flex",
-            flexDirection: "row",
+            flexDirection: "column",
             justifyContent: "space-evenly",
-            alignItems: "center"
-        }}>
+          }}
+        >
+          <a href="mailto:josias@josiasw.dev">josias@josiasw.dev</a>
+          <span
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-evenly",
+              alignItems: "center",
+            }}
+          >
             <img src="/myhackclub.PNG" width="30px" alt="HackClub" />
-            <p >HackClub</p>
-        </span>
-    </div>
-</footer>
-<Spacer />
+            <p>HackClub</p>
+          </span>
+        </div>
+      </footer>
+      <Spacer />
     </>
   );
 };
