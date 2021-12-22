@@ -134,6 +134,7 @@ const HomePage = () => {
             justifyContent: "space-evenly",
           }}
         >
+        <a href="https://discord.gg/ZZZJsu6F">Join the Discord</a>
           <a href="mailto:josias@josiasw.dev">josias@josiasw.dev</a>
           <span
             style={{
