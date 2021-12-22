@@ -4,7 +4,10 @@
   "description": "The code for the kubehacks init hackathon 2021",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "correct": "set NODE_OPTIONS=--openssl-legacy-provider",
+    "dev": "next dev",
+    "build": "next build"
   },
   "keywords": [
     "app",
