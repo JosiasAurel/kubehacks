@@ -84,6 +84,11 @@ const HomePage = () => {
             All participants who succeed in completing at least 3 tasks will
             receive a certificate of completion in reward of their hard work.
           </p>
+          <p>
+            The hackathon will be held online so participants can be from anywhere.
+            Participants should be students of age less that 18.
+            The hackathon will start from 26 of December 2021 and end the 28 December 2021. 
+          </p>
         </div>
         <div id="organizers">
           <h2 style={{ textAlign: "center" }}>Organizers</h2>
