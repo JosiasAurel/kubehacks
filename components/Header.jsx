@@ -22,7 +22,9 @@ const Header = () => {
                 justifyContent: "space-event",
                 alignItems: "center"
             }}>
-                <Tag type="success">
+                <Tag style={{
+                    background: "transparent"
+                }} type="success">
                     KubeHacks : Init
                 </Tag>
             </div>
