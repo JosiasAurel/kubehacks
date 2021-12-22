@@ -11,11 +11,15 @@ import Organizer from "../components/Organizer";
 import RegisterForm from "../components/Register";
 
 import Image from "next/image";
+import Head from "next/head";
 
 const HomePage = () => {
   const [registrationModal, setRegistrationModal] = React.useState(false);
   return (
     <>
+    <Head>
+        <title>KubeHacks Init 2021</title>
+    </Head>
       <Header />
       <main className={styles.content}>
         <div
