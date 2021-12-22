@@ -12,7 +12,6 @@ import Image from "next/image";
 
 const HomePage = () => {
     const [registratioModal, setRegistrationModal] = React.useState(false);
-    const [menu, setMenu] = React.useState(false);
 
     return (
         <>
@@ -22,7 +21,8 @@ const HomePage = () => {
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-evenly",
-                    alignItems: "center"
+                    alignItems: "center",
+                    margin: "1em 0.5em"
                 }}>
                     <Image placeholder="blur" blurDataURL={event2021HeroBlurredDataURI} src="/event2021.png" width={600} height={400} />
                     <h2 style={{
@@ -33,14 +33,6 @@ const HomePage = () => {
                     </Button>
                 </div>
             </main>
-            <Modal visible={menu} onClose={() => setMenu(false)}>
-                    <Modal.Title>
-                        Menu
-                    </Modal.Title>
-                    <Modal.Content>
-                        Some Menu Items
-                    </Modal.Content>
-            </Modal>
         </>
     )
 }

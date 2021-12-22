@@ -17,11 +17,20 @@
   border-radius: 4px;
 }
 
-.header nav a {
+.header nav a,
+.header__nav a {
   padding: 0.4em;
+  margin: 0.6em;
 }
 
-.header nav a:hover {
+.header nav a:hover,
+.header__nav a:hover {
   color: white;
   background-color: blue;
+}
+
+@media screen and (max-width: 500px) {
+  .header nav {
+    display: none;
+  }
 }
