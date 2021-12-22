@@ -68,7 +68,7 @@ const Header = ({ setRegisterModal }) => {
             <Link href="/">
               <a>Home</a>
             </Link>
-            <a>Register</a>
+            <a onClick={(_) => setRegisterModal()}>Register</a>
             <a onClick={(_) => toast("You can't sign in at the moment")}>
               Sign In
             </a>

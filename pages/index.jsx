@@ -95,10 +95,9 @@ const HomePage = () => {
               github="https://github.com/JosiasAurel"
             />
             <Organizer
-              image={"/josias.jpg"}
-              name="Josias Aurel"
-              twitter="https://twitter.com/JosiasWing"
-              github="https://github.com/JosiasAurel"
+              image={"/glen.jpeg"}
+              name="Ngha Glen"
+              github="https://github.com/GlenMue"
             />
           </div>
         </div>
