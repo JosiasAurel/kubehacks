@@ -26,8 +26,8 @@ const RegisterForm = () => {
                     toast.success("Registered");
                     toast("You will be notified on updates when hackathon is about to start", { duration: 3000 });
                 } else { toast.error("Failed to register"); toast("Please retry again", { duration: 3000 }); }
+                setRegState(false);
             });
-        setRegState(false);
     }
     async function registerUser() {
         const response = await fetch("/api/register", {
@@ -94,10 +94,10 @@ const RegisterForm = () => {
             </Select>
             <Spacer />
             { !regState ?
-            <Button type="success-light">
+            <Button htmlType="submit" type="success-light">
                 Register
             </Button>
-            : <Button loading type="success-light">
+            : <Button htmlType="submit" loading type="success-light">
                 Register
             </Button> }
         </form>
