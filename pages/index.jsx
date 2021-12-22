@@ -17,10 +17,12 @@ const HomePage = () => {
   const [registrationModal, setRegistrationModal] = React.useState(false);
   return (
     <>
-    <Head>
+      <Head>
         <title>KubeHacks Init 2021</title>
-    </Head>
-      <Header />
+      </Head>
+      <Header
+        setRegisterModal={(_) => setRegistrationModal(!registrationModal)}
+      />
       <main className={styles.content}>
         <div
           style={{

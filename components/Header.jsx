@@ -7,7 +7,9 @@ import Link from "next/link";
 
 import styles from "../styles/components.module.css";
 
-const Header = () => {
+import toast from "react-hot-toast";
+
+const Header = ({ setRegisterModal }) => {
   const [menu, setMenu] = React.useState(false);
   const [windowWidth, setWindowWidth] = React.useState(0);
 
@@ -37,8 +39,10 @@ const Header = () => {
           <Link href="/">
             <a>Home</a>
           </Link>
-          <a>Register</a>
-          <a>Sign In</a>
+          <a onClick={(_) => setRegisterModal()}>Register</a>
+          <a onClick={(_) => toast("You can't sign in at the moment")}>
+            Sign In
+          </a>
           <a href="#organizers">Organizers</a>
         </nav>
         {windowWidth <= 500 ? (
@@ -65,7 +69,9 @@ const Header = () => {
               <a>Home</a>
             </Link>
             <a>Register</a>
-            <a>Sign In</a>
+            <a onClick={(_) => toast("You can't sign in at the moment")}>
+              Sign In
+            </a>
             <a href="#organizers">Organizers</a>
           </nav>
         </Modal.Content>
